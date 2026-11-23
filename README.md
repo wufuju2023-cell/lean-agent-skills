@@ -8,7 +8,7 @@ them to your environment.
 
 | Skill | What it covers |
 |---|---|
-| `3080-20g-local-information` | 本地环境那张魔改 RTX 3080 20G 的算力总账：硬件身份（GA102-200、68 SM、5MB L2、320-bit 19Gbps、320W、VBIOS 94.02.27.00.14）、gpu_unlock 2.0.0 到底解锁了什么（FP16/BF16/TF32 + FP32 累加 tensor 速率... |
+| `3080-20g-local-information` | 一台魔改 RTX 3080 20G 的算力实测总账：硬件身份（GA102-200、68 SM、5MB L2、320-bit 19Gbps、320W、VBIOS 94.02.27.00.14）、gpu_unlock 2.0.0 到底解锁了什么（FP16/BF16/TF32 + FP32 累加 tensor 速率... |
 | `Test-harness` | Build self-contained Python exercise files that teach a topic from zero and grade themselves — lesson docstring, a "predict the output" quiz (CASES/ANSWERS),... |
 | `ai-agent-gui` | Browser and desktop automation on this machine via the AI Agent GUI semantic CLI (agentgui), plus the machine's permanent browser-accessible XFCE remote desk... |
 | `explain-from-zero-with-ref` | 当用户贴一段 Lean 源码（或点名一个符号/文件）并要求「逐行逐块、从零讲、做真实验、写一套 .lean + .md、中文、自包含、放到某个路径」时使用：先判重与定位，再按「原文→拆块→排章→讲义→实验→引用→验收」产出可编译的教学工程，已有材料只引用不重写，引用必须是 nvim gF 可跳的绝对路径:行号。触... |
@@ -26,7 +26,7 @@ them to your environment.
 | `prove2me-question-bench-train` | 把本地 prove2me/formalpedia 快照（516k Lean 文件、0 个 olean）零编译抽成 T1–T5 分级题库，既能当 benchmark 也能当训练题；并给出让 OpenCode v2 agent 自动领题、编译、拆子任务、导出 /verify 提交包的整套环境（vLLM + OpenC... |
 | `python-lean-hover-docs` | 「python-lean-悬停文档写法」——为 Python/Lean 源码加"零基础悬停文档"（nvim 悬停键 K）的完整方法论与工具链：本地 typings stubs 遮蔽（pyrightconfig.stubPath）+ 官方文档 backfill（防遮蔽丢官方内容）+ 中文讲解只追加不覆盖；覆盖 nv... |
 | `qwen36-35b-a3b-train-locally` | 在单张魔改 RTX 3080 20G + 60G 内存上对 Qwen3.6-35B-A3B 做全参数 continued pretraining 的实测方案：roofline、模型真实结构、int8 主权重 + GaLore + 内存流式三段式设计、量化定论、三个自研内核、以及每层成本与最终吞吐账本。当要训练/微... |
-| `ssh-old-apple` | SSH into the old Apple/Windows machine (Tailscale host <host>, user 12345) for remote commands, file transfer, or troubleshooting. Use when the user asks to ... |
+| `ssh-old-apple` | SSH into the old Apple/Windows machine (Tailscale host <host>, user <user>) for remote commands, file transfer, or troubleshooting. Use when the user asks to ... |
 | `stacks-project-style-tags` | Apply or validate Stacks-Project-style tagged, numbered items（每个定义/定理/证明/代码/notebook cell 都有唯一 Tag，可交叉引用、不重复）to Markdown docs, source files, and Jupyter note... |
 | `tui-e2e-test-experience` | 用 tmux 驱动真实 OpenCode TUI（真实 PTY、真实渲染、send-keys 输入、capture-pane 读屏），再用 OpenCode HTTP API 做硬断言的端到端验收流程：启动、等待、发提示、轮询、取证、triage、清理；含本地环境 v2 二进制路径、模型 pin、插件热加载、to... |
 | `v1.0.0-alpha-proof-gpu-training` | AlphaProof 10-4 的 GPU 侧训练与推理配方（v1.0.0）：gpu-serve 参数化 CLI、/eval 契约、离线 CE 专家迭代、在线 RTTT/TTTRL、64 桶价值头、pool 分片与 logprob 回填，以及已知的数学与工程缺陷。当用户要改 GPU 训练、换 base 模型、Lo... |

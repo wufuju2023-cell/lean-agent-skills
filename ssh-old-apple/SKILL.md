@@ -1,6 +1,6 @@
 ---
 name: ssh-old-apple
-description: SSH into the old Apple/Windows machine (Tailscale host <host>, user 12345) for remote commands, file transfer, or troubleshooting. Use when the user asks to run something on the old Windows machine / <host> / desktop-qfu0fcf, or to transfer files to/from it.
+description: SSH into the old Apple/Windows machine (Tailscale host <host>, user <user>) for remote commands, file transfer, or troubleshooting. Use when the user asks to run something on the old Windows machine / <host> / <host>, or to transfer files to/from it.
 ---
 
 # SSH to the old Apple/Windows machine
