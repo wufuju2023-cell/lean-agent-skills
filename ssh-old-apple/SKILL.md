@@ -11,7 +11,7 @@ description: SSH into the old Apple/Windows machine (Tailscale host <host>, user
 |---|---|
 | SSH alias | `<host>` (defined in `~/.ssh/config`) |
 | Tailscale IP | `<host-ip>` |
-| Remote user | `12345` (Windows, member of Administrators) |
+| Remote user | `<user>` (Windows, member of Administrators) |
 | Local user | `a` |
 | Local key | `~/.ssh/id_ed25519_windows` |
 | Auth | Key-based; `BatchMode=yes` works |
